@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.cftic.fichapp">
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+
+    <application
+        android:name=".persistencia.DB"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".pdf.CreatePdfActivity"
+            android:label="Crear PDF"/>
+        <activity android:name=".actividades.RegistroEntradaSalida"
+            android:label="Entrada Salida">
+        </activity>
+        <activity android:name=".actividades.ModificarCrearBorrarActivity"
+            android:label="Modicar Plantilla "></activity>
+        <activity android:name=".actividades.ConsultaFichajeActivity"
+            android:label="Consulta Fichaje"/>
+
+        <activity
+            android:name=".actividades.Creditos"
+            android:label="Créditos" />
+        <activity
+            android:name=".actividades.RegistroEmpresaActivity"
+            android:label="Registro Empresa" />
+        <activity
+            android:name=".actividades.LoginActivity"
+            android:label="Login" />
+        <activity
+            android:name=".actividades.RegistroEmpleadoActivity"
+            android:label="Registro Empleado" />
+        <activity
+            android:name=".actividades.MenuEmpleadoActivity"
+            android:label="Menú Gestor" />
+        <activity
+            android:name=".actividades.MenuGestorActivity"
+            android:label="Menú Gestor" />
+        <activity
+            android:name=".actividades.AyudaActivity"
+            android:label="Ayuda" />
+        <activity
+            android:name=".actividades.AvisosLegalesActivity"
+            android:label="Aviso Legal" />
+        <activity android:name=".actividades.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>
